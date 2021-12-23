@@ -40,4 +40,9 @@ public partial class MainWindow : Window
 
         locationText.Text = $"Item {numberViewModel.Number} clicked";
     }
+
+    private void addButton_Click(object sender, RoutedEventArgs e)
+    {
+        _vm.Numbers.Add(new(_vm.Numbers.Count));
+    }
 }
